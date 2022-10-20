@@ -46,3 +46,17 @@ ul li .home {
     font-weight: bold;
     color:#1e1e1e
 }
+
+.grid-container {
+    display: grid;
+    background-color: rgb(235, 239, 242);
+    padding-top: 5%
+}
+
+.grid-item {
+    padding: 20px;
+    background-color: #e3e6eb;
+    margin: 0 150px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 5px 0;
+    max-width: 1180px;
+}
