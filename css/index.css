@@ -6,7 +6,7 @@
 
 body {
     font-family: sans-serif;
-    background-color: #7cb8cf
+    background-color: #b7cadf
 }
 
 nav {
@@ -19,9 +19,6 @@ nav {
     z-index: 10;
 }
 
-ul {
-}
-
 ul li{
     list-style: none;
     display: inline-block;
@@ -29,7 +26,7 @@ ul li{
     line-height: 100px;
 }
 
-ul li a{
+ul li .norm{
     display: block;
     font-size: 20px;
     font-family: "Times New Roman";
@@ -37,17 +34,24 @@ ul li a{
     padding: 0 15px;
 }
 
-ul li h2 {
+ul li .norm:hover{
+    color:#424f53;
+    font-size: 23px;
+}
+
+ul li .home {
     font-size: 50px;
     font-family: "Roboto";
     padding: 0 40px;
+    font-weight: bold;
+    color:#1e1e1e
 }
 
 
 .amalie {
     width: 95%;
     min-width: 20%;
-    height:auto;
+    height: auto;
     display: block;
     /* margin-left: auto;
     margin-right: auto; */
@@ -57,5 +61,32 @@ ul li h2 {
 
 .bgcolor {
     background-color: #1F2854;
-    box-shadow: 3px 5px 10px 5px rgba(25, 25, 25, 0.7);
+    /* box-shadow: 3px 5px 10px 5px rgba(25, 25, 25, 0.7); */
+}
+
+.text-background {
+    background-size: 750px;
+    background-attachment: fixed;
+    background-image: url(/images/binary.jpg);
+}
+
+.grid-container {
+    display: grid;
+    row-gap: 50px;
+    padding: 20px;
+
+}
+
+.grid-item {
+    padding: 20px;
+    background-color: #e3e6eb;
+    margin: 0 150px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 5px 0;
+    max-width: 1180px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 15px;
 }
