@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 body {
@@ -15,7 +16,7 @@ nav {
     background-color: rgb(235, 239, 242);
     position: fixed;
     top: 0;
-    box-shadow: 0 0 10px 5px rgba(25, 25, 25, 0.7);
+    box-shadow: 0 1px 10px 2px rgba(25, 25, 25, 0.5);
     z-index: 10;
 }
 
@@ -40,6 +41,7 @@ ul li .norm:hover{
 }
 
 ul li .home {
+    display: block;
     font-size: 50px;
     font-family: "Roboto";
     padding: 0 40px;
@@ -47,6 +49,9 @@ ul li .home {
     color:#1e1e1e
 }
 
+.empty {
+    margin: 40px 0;
+}
 
 .amalie {
     width: 95%;
@@ -56,7 +61,6 @@ ul li .home {
     /* margin-left: auto;
     margin-right: auto; */
     margin: 0 auto;
-    padding-top: 5%;
 }
 
 .bgcolor {
@@ -74,7 +78,6 @@ ul li .home {
     display: grid;
     row-gap: 50px;
     padding: 20px;
-
 }
 
 .grid-item {
@@ -85,8 +88,34 @@ ul li .home {
     max-width: 1180px;
 }
 
+.grid-media {
+    padding: 10px;
+    background-color: #e3e6eb;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 5px 0;
+    max-width: 1180px;
+}
+
 h1 {
     text-align: center;
     font-size: 25px;
     padding-bottom: 15px;
+}
+
+.row ::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.ove {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+.his {
+    float: left;
+    width: 25%;
+    padding: 5px;
 }
