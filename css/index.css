@@ -1,3 +1,4 @@
+/* Markerer alle elementer i siden*/
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@ body {
     background-color: #b7cadf
 }
 
+/*Opbygging av Nav baren*/
 nav {
     width: 100%;
     height: 100px;
@@ -49,31 +51,35 @@ ul li .home {
     color:#1e1e1e
 }
 
+/*Noen elementer går under navbaren på toppen uten denne. Finnes en bedre løsning, men denne virker for nå*/
 .empty {
     margin: 40px 0;
 }
 
+/*Kode for det store bildet*/
 .amalie {
     width: 95%;
     min-width: 20%;
     height: auto;
     display: block;
-    /* margin-left: auto;
-    margin-right: auto; */
+    /* margin-left: auto;  
+    margin-right: auto; */  /*Kode i komentarer er ting jeg har prøvd, og enten brukt en annen metode, eller fjernet*/
     margin: 0 auto;
 }
 
+/*Kode for bakgrunnen til bildet*/
 .bgcolor {
     background-color: #1F2854;
     /* box-shadow: 3px 5px 10px 5px rgba(25, 25, 25, 0.7); */
 }
 
+/*Grid bakgrunn*/
 .text-background {
     background-size: 750px;
     background-attachment: fixed;
-    background-image: url(/images/binary.jpg);
+    /* background-image: url(/images/binary.jpg); */ /* Bilde fra internett, brukt som inspirasjon. Blir tatt vekk senere*/
 }
-
+/*Grid*/
 .grid-container {
     display: grid;
     row-gap: 50px;
@@ -82,18 +88,20 @@ ul li .home {
 
 .grid-item {
     padding: 20px;
-    background-color: #e3e6eb;
+    background-color: rgb(235, 239, 242);
     margin: 0 150px;
     box-shadow: rgba(0, 0, 0, 0.1) 0 1px 5px 0;
     max-width: 1180px;
+    border-radius: 4px;
 }
 
 .grid-media {
     padding: 10px;
-    background-color: #e3e6eb;
+    background-color: rgb(235, 239, 242);
     margin: 0 auto;
     box-shadow: rgba(0, 0, 0, 0.1) 0 1px 5px 0;
     max-width: 1180px;
+    border-radius: 4px;
 }
 
 h1 {
@@ -101,19 +109,21 @@ h1 {
     font-size: 25px;
     padding-bottom: 15px;
 }
-
+/*Media Bilder setup*/
 .row ::after {
     content: "";
     display: table;
     clear: both;
-}
+} /*Usikker på hva denne del av koden gjør, ingen ting skjer om jeg fjerner den, redd for at det vil ødelege noe i fremtiden så den blir*/
 
+/*CSS for ovelsene*/
 .ove {
     float: left;
     width: 50%;
     padding: 5px;
 }
 
+/*CSS for historie bildene*/
 .his {
     float: left;
     width: 25%;
