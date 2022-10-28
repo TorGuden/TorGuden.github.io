@@ -35,11 +35,12 @@ ul li .norm{
     font-family: "Times New Roman";
     color: #1e1e1e;
     padding: 0 15px;
+    transition: font-size 0.4s;
 }
 
 ul li .norm:hover{
     color:#424f53;
-    font-size: 23px;
+    font-size: 22px;
 }
 
 ul li .home {
@@ -48,7 +49,12 @@ ul li .home {
     font-family: "Roboto";
     padding: 0 40px;
     font-weight: bold;
-    color:#1e1e1e
+    color:#1e1e1e;
+    transition: font-size 0.4s;
+}
+
+ul li .home:hover{
+    font-size: 60px;
 }
 
 /*Noen elementer går under navbaren på toppen uten denne. Finnes en bedre løsning, men denne virker for nå*/
@@ -114,7 +120,7 @@ h1 {
     content: "";
     display: table;
     clear: both;
-} /*Usikker på hva denne del av koden gjør, ingen ting skjer om jeg fjerner den, redd for at det vil ødelege noe i fremtiden så den blir*/
+} 
 
 /*CSS for ovelsene*/
 .ove {
@@ -128,4 +134,8 @@ h1 {
     float: left;
     width: 25%;
     padding: 5px;
+}
+
+.a:active,.a:hover{
+    font-size: 20px;
 }
