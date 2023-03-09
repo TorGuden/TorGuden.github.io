@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/hang.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Hangman</title>
+</head>
+<body>
+<header>
+    <!-- Navigasjon Bar -->
+    <nav>
+        <ul>
+            <li><a title="Home" class="home" href="index.html">IM</a></li>
+            <li><a title="Skole" class="norm" href="skole.html">Skole</a></li>
+            <li><a title="Programmering" class="norm" href="program.html">Programmering</a></li>
+            <li><a title="Medieproduksjon" class="norm" href="media.html">Medieproduksjon/Teknologiforsåelse</a></li>
+            <li><a title="Artikkler" class="norm" href="artikkler.html">Artikkler</a></li>
+            <li><a title="Gamer" class="norm" href="hang.html">Gamer</a></li>
+        </ul>
+    </nav>
+    <div class="void">A</div>
+</header>
+<div class="box">
+    <h1 class="titel">Hangman</h1>
+        <p class="titel">Find the word and don't get hanged!</p>
+    <div class="container">
+        <div class="space"></div>
+        <div class="item word-display" id="word-display"></div>
+        <div class="item fail-counter" id="fail-counter"></div>
+        <div class="item buttons-container" id="buttons-container">
+            <p class="desc">Use the letters to guess the word</p>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+<script src="./javascript/hang.js"></script>
+</body>
+</html>

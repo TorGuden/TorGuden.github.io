@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    row-gap: 50px;
+    padding: 20px;
+}
+
+.griditem {
+    font-size: 15px;
+    padding: 20px;
+    margin: 0 150px;
+    background-color: lightgray;
+}
+
+.Artikkel {
+    padding: 15px;
+}
+
+.forfatter {
+    font-size: 15px;
+}
+
+.mini {
+    display:inline;
+    padding-right: 10px;
+   }
+
+.b {
+    font-size: 20px;
+}
